@@ -1,0 +1,61 @@
+﻿@page "/"
+@using ShoppingCart.Data;
+@using ShoppingCart.Modelos;
+
+
+<h1>ShoppingCart.</h1>
+<section class="container d-flex flex-row">
+    <div class="container d-flex flex-wrap">
+        @foreach (var articulo in Database.Productos)
+        {
+            <ProductCard Producto="articulo" MostrarBotonAgregar=true Agregar="@(article=>add(articulo))" MostrarUnidades=false/>
+        }
+    </div>
+
+    <div>
+        <ProductCard Producto="@Total" MostrarImagen=false MostrarBotonComprar=true ComprarTodo="@ComprarTodo" MostrarBotonAgregar=false />
+        @if (compraRealizada)
+        {
+            <div class="alert alert-success" role="alert">
+                Su compra fue realizada y enviada a su domicilio!!!
+            </div>
+        }
+    </div>
+   
+</section> 
+
+
+
+
+
+
+@code {
+
+    private Producto Total = new Producto
+        {
+            Nombre = "Total",
+            Unidades = 0,
+            Precio = 0m,
+            ImagenArt = ""
+        };
+
+    private bool compraRealizada = false;
+
+    void add(Producto productoActual)
+    {
+        compraRealizada = false;
+        Total.Unidades = Total.Unidades + 1;
+        Total.Precio = Total.Precio + productoActual.Precio;
+    }
+    void ComprarTodo()
+    {
+        compraRealizada = false;
+        if (Total.Unidades > 0)
+        {
+            Total.Unidades = 0;
+            Total.Precio = 0m;
+            compraRealizada = true;
+        }
+    }
+}
+

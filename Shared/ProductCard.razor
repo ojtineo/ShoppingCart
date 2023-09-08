@@ -1,0 +1,67 @@
+﻿@using ShoppingCart.Modelos;
+
+<div class="card flex-row" style="width: 30rem;">
+    <div>
+        @if (MostrarImagen)
+        {
+            <img src="@Producto.ImagenArt" class="card-img-left" width="100" alt="...">
+        }
+    </div>
+    <div class="card-body">
+        @if (MostrarNombre)
+        {
+            <h5 class="card-title">@Producto.Nombre</h5>
+        }
+        @if (MostrarPrecio)
+        {
+            <p class="card-text">$@Producto.Precio</p>
+        }
+        @if (MostrarUnidades)
+        {
+            <p class="card-text">@Producto.Unidades unidades</p>
+        }
+        <div>
+            @if (MostrarBotonAgregar)
+            {
+                <button class="btn btn-primary" @onclick="@Agregar">Agregar al carrito</button>
+            }
+
+        </div>
+        @if (MostrarBotonComprar)
+        {
+            <button class="btn btn-secondary" @onclick="@ComprarTodo">Comprar</button>
+        }
+    </div>
+</div>
+
+
+@code {
+    [Parameter]
+    public Producto Producto { get; set; }
+
+    [Parameter]
+    public bool MostrarBotonAgregar { get; set; }
+
+    [Parameter]
+    public bool MostrarBotonComprar { get; set; }
+
+    [Parameter]
+    public bool MostrarUnidades { get; set; } = true;
+
+    [Parameter]
+    public bool MostrarPrecio { get; set; } = true;
+
+    [Parameter]
+    public bool MostrarNombre { get; set; } = true;
+
+    [Parameter]
+    public bool MostrarImagen { get; set; } = true;
+
+    [Parameter]
+    public EventCallback Agregar { get; set; }
+
+    [Parameter]
+    public EventCallback ComprarTodo { get; set; }
+
+}
+

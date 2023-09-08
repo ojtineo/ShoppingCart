@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "tGgaVf4g4iglSygkI6Ms6GSucX/DJdS0N2UvkumZUzA=",
+  "Source": "ShoppingCart",
+  "BasePath": "_content/ShoppingCart",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ShoppingCart\\wwwroot",
+      "Source": "ShoppingCart",
+      "ContentRoot": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ShoppingCart.styles.css",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\bundle\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "ShoppingCart.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\bundle\\ShoppingCart.styles.css"
+    },
+    {
+      "Identity": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ShoppingCart.bundle.scp.css",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "ShoppingCart.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\ShoppingCart.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\wwwroot\\favicon.png",
+      "SourceId": "ShoppingCart",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ojtin\\source\\repos\\ShoppingCart\\wwwroot\\",
+      "BasePath": "_content/ShoppingCart",
+      "RelativePath": "favicon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.png"
+    }
+  ]
+}
